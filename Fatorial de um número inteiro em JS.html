@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script>
+	
+/*Lista de exercícios 4
+Comandos de repetição (do-while e for)*/
+/*4. Implemente um programa que recebe um número inteiro e calcula o seu fatorial.*/
+
+var num, i, fat=1, cont=1;
+
+        do{
+            num=parseInt(prompt("digite um numero inteiro"));
+            
+            for(i=1; i<=num; i++){
+                fat=fat*i;
+            }
+            alert("!"+num+" = "+fat);
+            cont++;
+		}while(cont<2);
+
+</script>
