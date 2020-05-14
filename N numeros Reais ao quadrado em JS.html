@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script>
+	
+/*Lista de exercícios 4
+Comandos de repetição (do-while e for)*/
+/*5. Modifique o programa da questão 1 de maneira que ao invés de 10
+números, o programa calcule e imprima o quadrado de N números, em
+que N é um número inteiro positivo dado pelo usuário.*/
+/*1. Implemente um programa que recebe 10 números reais e calcula o
+quadrado deles*/
+//https://www.youtube.com/watch?v=gaFSSrE0RxY
+
+var cont=1, num, N;
+	
+	N=parseInt(prompt("digite a quantidade de numeros a serem calculados"));
+	do{
+		num=parseFloat(prompt("digite o : "+cont+"° numero"));
+		alert(num*num);
+		cont++;
+}
+	while(cont<=N);
+
+</script>
