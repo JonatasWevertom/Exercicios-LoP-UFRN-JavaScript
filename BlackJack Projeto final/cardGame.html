@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="mystyle.css" rel="stylesheet">
+		<title>Mesa de Jogo</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+$(document).ready(function(){
+    $("#I").click(function(){
+		$("#I").hide();
+        $("#C1").show();
+        $("#P1").show();
+    });
+    $("#C1").click(function(){
+		$("#C1").hide();
+        $("#C2").show();
+    });
+     $("#P1").click(function(){
+		$("#P1").hide();
+        $("#P2").show();
+    });
+     $("#P2").click(function(){
+        $("#P2").hide();
+        $("#C2").hide();
+        $("#C1").hide();
+    });
+});
+</script>
+	</head>
+	<body onload="shufle()">
+		<center>
+		<script src="cards.js"></script>	
+		<script src="control.js"></script>	
+		<div id="container">
+			<nav id="bar">
+				<span id="score1"><b>Você= Jogador: 1</b></span>
+			</nav>
+			<article id="center">
+				<table>
+					<tr>
+						<td>1 </td>
+						<td>2</td>
+						<td>3</td>
+						<td>3.1</td>
+					</tr>
+					<tr>
+						<td id="mid" colspan="4"> </td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>9.1</td>
+					</tr>
+				</table>
+			</article>
+			<footer id="bar">
+				<span id="score2"><b>Maquina= Jogador: 2</b></span>
+			</footer>
+		</div>
+		<button id="I" onClick="iniciar()">Iniciar!</button>
+		<button id="C1" class="hidden" onClick="continuar1()">Continuar?</button>
+		<button id="C2" class="hidden" onClick="continuar2()">Continuar?</button>
+		<button id="P1" class="hidden" onClick="parar1()">Parar?</button>
+		<button id="P2" class="hidden" onClick="parar2()">Parar?</button>
+		<p id="result"></p>
+	</body>
+</html>
