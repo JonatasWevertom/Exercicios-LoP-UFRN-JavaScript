@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+	
+/*Lista 5
+Vetores*/
+/*6. Faça um programa que receba quantidade de produtos que serão armazenados em
+um vetor, depois recebe armazena os preços dos produtos no vetor.
+O programa deve calcular:
+- A quantidade de produtos com preço inferior a R$ 50,00;
+- A quantidade de produtos com preço entre R$ 50,00 e R$100,00;
+- A média dos preços dos produtos com preço superior a R$ 100,00.*/
+//https://www.youtube.com/watch?v=kfaexbwMDD8
+
+var qtd, cont, pre=[], inf=0, ent=0, supe1=0, supe2=0, med;
+qtd=parseFloat(prompt("Digite aqui a quantidade de produtos a ser armazenada"));
+for(cont=1; cont<=qtd; cont++){
+	pre[cont]=parseFloat(prompt("Digite aqui o preço do: "+cont+"° produto"));
+}
+for(cont=1; cont<=qtd; cont++){
+	if(pre[cont]<50.00){
+		inf++;
+	}
+	if(pre[cont]>=50.00 && pre[cont]<=100.00){
+		ent++;
+	}
+	if(pre[cont]>100.00){
+		supe1=(supe1+pre[cont]);
+		supe2++;
+	}
+}
+med=(supe1/supe2);
+alert("Quantidade inferior a 50,00: "+inf+", Quantidade entre 50,00 e 100,00: "+ent+", Valor medio dos superiores a 100,00: "+med);
+	
+</script>

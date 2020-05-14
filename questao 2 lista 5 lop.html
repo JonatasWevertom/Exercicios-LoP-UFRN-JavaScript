@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+	
+/*Lista 5
+Vetores*/
+/*2. Faça um programa que cria e recebe do usuário dois vetores A e B de 10 elementos.
+O programa deve armazenar em um vetor C de 10 elementos a soma dos elementos
+de cada posição correspondente dos vetores A e B. No final imprimir o vetor C.*/
+//https://www.youtube.com/watch?v=r9S1d-jbIFk
+
+var A=[], B=[],C=[], cont;
+
+for(cont=1; cont<=10; cont++){
+	A[cont]=parseFloat(prompt("digite o: "+cont+"° Numero do vetor A"));
+	B[cont]=parseFloat(prompt("digite o: "+cont+"° Numero do vetor B"));
+}
+for(cont=1; cont<=10; cont++){
+	C[cont]=(A[cont]+B[cont]);
+	alert("Resultado da: "+cont+"° soma: "+C[cont]);
+}
+			   
+</script>
