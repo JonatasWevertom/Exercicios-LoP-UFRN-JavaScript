@@ -1,0 +1,33 @@
+table, tr, td {
+	border:2px solid black;
+	padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+}
+h1 {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+	background-color:black;
+	color:white;
+}
+td {
+	background-Color:lime;
+}
+p {
+	width: 28%;
+	height: 32%;
+	background-color:lime;
+}
+h3 {
+	width: 16%;
+	height: 32%;
+	background-color:lime;
+}
+h4 {
+	width: 34%;
+	height: 32%;
+	background-color:red;
+}
